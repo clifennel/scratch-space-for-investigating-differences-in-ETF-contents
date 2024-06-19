@@ -9,7 +9,7 @@ for holding in VT_minus_VXUS_ISIN_plus_SEDOL_holding_dict.values():
 VT_minus_VXUS_chart_data = {
     'x_value': [],
     'percentage': [],
-    'proportion_as_percent': [],
+    'proportion_as_percent_for_tooltip': [],
     'funds_in': [],
     'color': [],
     'ticker': [],
@@ -28,10 +28,10 @@ for holding in VT_minus_VXUS_holdings:
                                                   / VT_minus_VXUS_total_market_value)
     VT_minus_VXUS_chart_data['proportion'].append(holding['marketValue']
                                                   / VT_minus_VXUS_total_market_value)
-    holding_proportion_as_percent \
+    holding_proportion_as_percent_for_tooltip \
         = format(holding['marketValue'] / VT_minus_VXUS_total_market_value,
                 ".10%")
-    VT_minus_VXUS_chart_data['proportion_as_percent'].append(holding_proportion_as_percent)
+    VT_minus_VXUS_chart_data['proportion_as_percent_for_tooltip'].append(holding_proportion_as_percent_for_tooltip)
     if (holding['isin'], holding['sedol']) in ESGV_ISIN_plus_SEDOL_holding_dict:
         VT_minus_VXUS_chart_data['color'].append(Light3[0])
         VT_minus_VXUS_chart_data['funds_in'].append("Both ESGV and United States holdings of VT")
@@ -71,7 +71,7 @@ VT_minus_VXUS_chart_tooltips = \
      ("Funds in", "@funds_in"),
      ("Color", "$swatch:color"),
      #("shortName", "@shortName"),
-     ("Percent", "@proportion_as_percent"),
+     ("Percent", "@proportion_as_percent_for_tooltip"),
      ("ISIN", "@ISIN"),
      ("SEDOL", "@SEDOL")
      #("Proportion", "@proportion")
