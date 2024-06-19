@@ -1,0 +1,8 @@
+# gitignore configured as whitelist
+*
+!*/
+
+## Whitelist the following
+!.gitignore
+!*.py
+!*.ods
