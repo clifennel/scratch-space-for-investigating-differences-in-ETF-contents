@@ -1,4 +1,4 @@
-# Requires "import vt_vxus_esgv_stuff"
+# Requires "import vt_vxus_esgv_stuff" and "import vt_vxus_esgv_print_stuff"
 
 # Set path to file here
 path_VTI = "vti-stock.json"
@@ -13,4 +13,4 @@ import vt_vxus_esgv_print_stuff
 VTI_identifiers = vt_vxus_esgv_stuff.get_identifiers(VTI_holdings)
 VTI_duplicates = vt_vxus_esgv_stuff.get_duplicates(VTI_holdings)
 
-vt_vxus_esgv_print_stuff.print_fund_stuff("VTI", VTI_holdings, VTI_identifiers, VTI_duplicates)
+#vt_vxus_esgv_print_stuff.print_fund_stuff("VTI", VTI_holdings, VTI_identifiers, VTI_duplicates)
