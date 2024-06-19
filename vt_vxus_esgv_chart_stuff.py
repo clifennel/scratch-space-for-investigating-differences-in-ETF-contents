@@ -2,10 +2,6 @@
 import vt_vxus_esgv_stuff
 from vt_vxus_esgv_stuff import *
 
-VT_minus_VXUS_chart_y_list = []
-for holding in VT_minus_VXUS_ISIN_plus_SEDOL_holding_dict.values():
-    VT_minus_VXUS_chart_y_list.append(holding['marketValue'])
-
 VT_minus_VXUS_chart_data = {
     'x_value': [],
     'percentage': [],
