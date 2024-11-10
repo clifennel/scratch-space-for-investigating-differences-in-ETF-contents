@@ -21,3 +21,26 @@ for holding in VTI_holdings:
         = holding
 
 #vt_vxus_esgv_print_stuff.print_fund_stuff("VTI", VTI_holdings, VTI_identifiers, VTI_duplicates)
+
+from vt_vxus_esgv_stuff     import VT_minus_VXUS_ISIN_plus_SEDOL_holding_dict \
+                                     as VT_US_holdings_ISIN_plus_SEDOL_holding_dict
+
+VT_US_holdings_VTI_key_difference = \
+    VT_US_holdings_ISIN_plus_SEDOL_holding_dict.keys() - VTI_ISIN_plus_SEDOL_holding_dict.keys()
+
+# print(len(VT_US_holdings_VTI_key_difference))
+# print(VT_US_holdings_VTI_key_difference)
+
+VTI_VT_US_holdings_key_difference = \
+    VTI_ISIN_plus_SEDOL_holding_dict.keys() - VT_US_holdings_ISIN_plus_SEDOL_holding_dict.keys()
+
+# print(len(VTI_VT_US_holdings_key_difference))
+# print(VTI_VT_US_holdings_key_difference)
+
+#for key in VT_US_holdings_VTI_key_difference:
+#    if VT_US_holdings_ISIN_plus_SEDOL_holding_dict[key]['ticker'] == '':
+#        print("<empty ticker>")
+#    else:
+#        print(VT_US_holdings_ISIN_plus_SEDOL_holding_dict[key]['ticker'])
+#    print(" ", VT_US_holdings_ISIN_plus_SEDOL_holding_dict[key]['longName'])
+#    print(" ", key)

@@ -113,6 +113,5 @@ VT_total_percent_weight = total_value_by_key(VT_holdings, 'percentWeight')
 #print("Is VT minus VXUS a superset of ESGV?",
 #      VT_minus_VXUS_ISIN_plus_SEDOL_holding_dict.keys() > ESGV_ISIN_plus_SEDOL_holding_dict.keys())
 
-#print(len(ESGV_VT_minus_VXUS_key_difference))
-#print(ESGV_VT_minus_VXUS_key_difference)
-
+# print(len(ESGV_VT_minus_VXUS_key_difference))
+# print(ESGV_VT_minus_VXUS_key_difference)
