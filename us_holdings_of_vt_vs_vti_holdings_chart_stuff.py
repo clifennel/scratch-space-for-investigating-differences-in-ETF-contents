@@ -114,8 +114,8 @@ p = figure(x_range=Range1d(0,
            tools="pan,wheel_zoom,box_zoom,reset,save,box_select",
            active_scroll="wheel_zoom",
            sizing_mode="stretch_both")
-p.xaxis.axis_label = "Holding number, sorted by percentage"
-p.yaxis.axis_label = "Percentage of stock holdings in combined holding set"
+p.xaxis.axis_label = "Holding number, sorted by percentage of fund"
+#p.yaxis.axis_label = "Percentage of stock holdings in combined holding set"
 #p.yaxis.axis_label = "ignore this axis"
 
 
